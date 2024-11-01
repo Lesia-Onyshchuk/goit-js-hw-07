@@ -31,9 +31,11 @@ const gallery = document.querySelector('.gallery');
 
 images.forEach(picture => {
   const liItem = document.createElement('li');
+  liItem.classList.add('item');
   gallery.append(liItem);
   const image = document.createElement('img');
   image.src = picture.url;
   image.alt = picture.alt;
+  image.classList.add('item-img');
   liItem.append(image);
 });
