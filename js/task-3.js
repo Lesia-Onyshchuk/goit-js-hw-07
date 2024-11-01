@@ -6,6 +6,6 @@ nameIn.addEventListener('input', () => {
   if (nameTrim.length > 0) {
     nameOut.textContent = nameTrim;
   } else {
-    nameOut.textContent = 'Null';
+    nameOut.textContent = 'Anonymous';
   }
 });
